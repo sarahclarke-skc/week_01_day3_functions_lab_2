@@ -46,13 +46,30 @@ tasks = [
 # print(time_taken(tasks, 20))
 
 # 5. Print any task with a given description
-def task_from_description(input):
-    input_lower_case = input.lower()
-    for task in tasks:
-        if input_lower_case == task["description"].lower():
-            return task
-        else:
-            return "No task found"
+# def task_from_description(input):
+#     input_lower_case = input.lower()
+#     for task in tasks:
+#         if input_lower_case == task["description"].lower():
+#             return task
+#         else:
+#             return "No task found"
 
-print(task_from_description("wAsh DIshes"))
+# print(task_from_description("wAsh DIshes"))
+
+# # 6. Given a description, update that task to mark it as complete.
+# def completion_update(input):
+#     input_lower_case = input.lower()
+#     for task in tasks:
+#         if input_lower_case == task["description"].lower():
+#             task["completed"] = True
+#     return tasks
+
+# print(completion_update("clean winDows"))
+
+
+# 7. Add a task to the list
+def add_task(answer_1, answer_2, answer_3):
+    tasks.append({"description": answer_1, "completed": answer_2 , "time_taken": answer_3})
+    return tasks
+print(add_task('Feed Cat', True, 4))
 

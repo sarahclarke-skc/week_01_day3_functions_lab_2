@@ -6,63 +6,63 @@ tasks = [
     { "description": "Walk Dog", "completed": True, "time_taken": 60 },
 ]
 # 1. Print a list of uncompleted tasks
-# def list_of_uncompleted_tasks(tasks):
-#     uncompleted_tasks = []
-#     for task in tasks:
-#         if task["completed"] == False:
-#             uncompleted_tasks.append(task)
-#     return uncompleted_tasks
+def list_of_uncompleted_tasks(tasks):
+    uncompleted_tasks = []
+    for task in tasks:
+        if task["completed"] == False:
+            uncompleted_tasks.append(task)
+    return uncompleted_tasks
 
 # print(list_of_uncompleted_tasks(tasks))
 
 # 2. Print a list of completed tasks
-# def list_of_completed_tasks(tasks):
-#     completed_tasks = []
-#     for task in tasks:
-#         if task["completed"] == True:
-#             completed_tasks.append(task)
-#     return completed_tasks
+def list_of_completed_tasks(tasks):
+    completed_tasks = []
+    for task in tasks:
+        if task["completed"] == True:
+            completed_tasks.append(task)
+    return completed_tasks
 
 # print(list_of_completed_tasks(tasks))
 
 # 3. Print a list of all task descriptions
 
-# def all_descriptions(tasks):
-#     descriptions = []
-#     for item in tasks:
-#         descriptions.append(item["description"])
-#     return descriptions
+def all_descriptions(tasks):
+    descriptions = []
+    for item in tasks:
+        descriptions.append(item["description"])
+    return descriptions
 
 # print(all_descriptions(tasks))
         
 # 4. Print a list of tasks where time_taken is at least a given time
-# def time_taken(tasks, number):
-#     long_tasks = []
-#     for item in tasks:
-#         if int(item["time_taken"]) >= number:
-#             long_tasks.append(item["description"])
-#     return long_tasks
+def time_taken(tasks, number):
+    long_tasks = []
+    for item in tasks:
+        if int(item["time_taken"]) >= number:
+            long_tasks.append(item["description"])
+    return long_tasks
 
 # print(time_taken(tasks, 20))
 
 # 5. Print any task with a given description
-# def task_from_description(input):
-#     input_lower_case = input.lower()
-#     for task in tasks:
-#         if input_lower_case == task["description"].lower():
-#             return task
-#         else:
-#             return "No task found"
+def task_from_description(input):
+    input_lower_case = input.lower()
+    for task in tasks:
+        if input_lower_case == task["description"].lower():
+            return task
+        else:
+            return "No task found"
 
 # print(task_from_description("wAsh DIshes"))
 
 # # 6. Given a description, update that task to mark it as complete.
-# def completion_update(input):
-#     input_lower_case = input.lower()
-#     for task in tasks:
-#         if input_lower_case == task["description"].lower():
-#             task["completed"] = True
-#     return tasks
+def completion_update(input):
+    input_lower_case = input.lower()
+    for task in tasks:
+        if input_lower_case == task["description"].lower():
+            task["completed"] = True
+    return tasks
 
 # print(completion_update("clean winDows"))
 
@@ -73,3 +73,26 @@ def add_task(answer_1, answer_2, answer_3):
     return tasks
 print(add_task('Feed Cat', True, 4))
 
+# 8. Use a while loop to display the following menu and allow the use to enter an option.
+
+# print("Menu:")
+def user_function(input):
+    functions = [list_of_uncompleted_tasks(tasks), list_of_completed_tasks(tasks), all_descriptions(tasks)]
+    while input != "q" or "Q":
+        
+
+
+    
+
+# print("1: Display All Tasks")
+# print("2: Display Uncompleted Tasks")
+# print("3: Display Completed Tasks")
+# print("4: Mark Task as Complete")
+# print("5: Get Tasks Which Take Longer Than a Given Time")
+# print("6: Find Task by Description")
+# print("7: Add a new Task to list")
+# print("M or m: Display this menu")
+# print("Q or q: Quit")
+# ```
+
+# 9. Call the appropriate function depending on the users choice.
